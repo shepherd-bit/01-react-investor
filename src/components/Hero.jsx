@@ -241,7 +241,7 @@ export default function Hero() {
             >
               {/* Empty Hero Image Container Placeholder */}
               <img
-                src=""
+                src="/hero-3.jpg"
                 alt="Financial Advisor Hero Cutout"
                 className="h-full w-full object-cover object-center"
               />
