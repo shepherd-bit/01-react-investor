@@ -90,7 +90,7 @@ export default function AboutFounder() {
     <section
       id="about"
       ref={containerRef}
-      className="relative w-full bg-slate-50 text-slate-900 py-20 sm:py-28 lg:py-36 overflow-hidden"
+      className="relative w-full bg-slate-50 text-slate-900 py-10 sm:py-14 lg:py-20 overflow-hidden"
     >
       {/* Subtle Background Accent Lighting */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-sky-200/40 rounded-full blur-[140px] pointer-events-none" />

@@ -174,7 +174,7 @@ export default function InvestmentNiches() {
     <section
       id="niches"
       ref={containerRef}
-      className="relative w-full bg-white text-slate-900 py-20 sm:py-28 lg:py-36 overflow-hidden"
+      className="relative w-full bg-white text-slate-900 py-10 sm:py-14 lg:py-20 overflow-hidden"
     >
       {/* Background Accent Gradients */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-sky-100/60 rounded-full blur-[160px] pointer-events-none" />
