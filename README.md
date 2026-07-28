@@ -1,16 +1,50 @@
-# React + Vite
+# CapitalCore — Institutional Investor Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![CapitalCore Preview](/public/preview.PNG)
 
-Currently, two official plugins are available:
+> An interactive, modern, high-converting investor landing page designed for institutional asset managers, venture capital firms, and high-net-worth advisory services. Built with React, GSAP, Tailwind CSS, and Lucide/React Icons.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🌟 Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Hero & Interactive Video Spotlight:** High-impact value proposition with smooth animated entrances and background video/modal triggers.
+* **Featured on Global Stages ("As Seen In"):** Interactive showcase highlighting keynote talks (e.g., TEDx) and top-tier financial publications (*Forbes*, *Bloomberg*, *WSJ*, *FT*, *TechCrunch*).
+* **Success Stories Carousel & Modal:** Interactive portfolio case studies with detailed metrics, automated 15-second transitions, and slide-over story drawers.
+* **Interactive Financial Calculators & Dashboards:** Embedded tools for calculating risk-adjusted returns and capital allocation models.
+* **Institutional Security & Compliance:** Regulatory disclaimers, SEC/FCA compliance callouts, and multi-tier security trust badges.
+* **Sleek Dark Theme UI:** Designed with high contrast, modern typography (Inter font), smooth borders, and responsive grid layouts.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+* **Frontend Framework:** [React 18](https://react.dev/)
+* **Build Tool:** [Vite](https://vitejs.dev/)
+* **Animations:** [GSAP (GreenSock Animation Platform)](https://gsap.com/) & `@gsap/react`
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Icons:** [React Icons (`react-icons/fi`)](https://react-icons.github.io/react-icons/)
+* **Linting & Code Quality:** [ESLint](https://eslint.org/)
+
+---
+
+## 📁 Project Structure
+
+```text
+├── public/
+│   ├── logos/             # Press, partner, and client monochrome SVG logos
+│   └── media/             # Video thumbnails, hero assets, and README preview
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx            # Dynamic navigation header
+│   │   ├── Hero.jsx              # Hero section with interactive CTA
+│   │   ├── Features.jsx          # "As Seen In" press & keynote showcase
+│   │   ├── SuccessStories.jsx    # Portfolio case studies & auto-carousel
+│   │   ├── AboutFounder.jsx      # Founder spotlight & background
+│   │   ├── Services.jsx         # Investment advisory offerings
+│   │   └── Footer.jsx            # Institutional footer with newsletter
+│   ├── App.jsx                   # Root layout component
+│   ├── index.css                 # Global CSS and Tailwind imports
+│   └── main.jsx                  # Application entry point
+├── package.json
+└── README.md
