@@ -16,7 +16,10 @@ export default function Hero() {
   const counterRef = useRef(null);
 
   // Array for the 15 trusted client avatars
-  const trustedAvatars = Array.from({ length: 15 }, (_, i) => i + 1);
+  const trustedAvatars = Array.from(
+  { length: 15 },
+  (_, i) => `/client-avatars/avatar${i + 1}.jpg`
+);
 
   useGSAP(
     () => {
@@ -160,23 +163,22 @@ export default function Hero() {
             <div className="w-full pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
               <div className="flex items-center gap-3">
                 {/* Infinite Carousel Container */}
-                <div className="flex overflow-hidden w-36 sm:w-44 rounded-full border border-white/15 bg-white/5 p-1 backdrop-blur-md">
-                  <div className="flex gap-2 animate-marquee whitespace-nowrap">
-                    {trustedAvatars.map((id) => (
-                      <div
-                        key={id}
-                        className="h-7 w-7 sm:h-8 sm:w-8 rounded-full overflow-hidden bg-slate-800 border border-white/20 flex-shrink-0"
-                      >
-                        {/* Empty Avatar Container Placeholder */}
-                        <img
-                          src=""
-                          alt={`Client Avatar ${id}`}
-                          className="h-full w-full object-cover"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                    <div className="flex overflow-hidden w-36 sm:w-44 rounded-full border border-white/15 bg-white/5 p-1 backdrop-blur-md">
+                    <div className="flex gap-2 animate-marquee whitespace-nowrap">
+                        {trustedAvatars.map((srcPath, index) => (
+                        <div
+                            key={index}
+                            className="h-7 w-7 sm:h-8 sm:w-8 rounded-full overflow-hidden bg-slate-800 border border-white/20 flex-shrink-0"
+                        >
+                            <img
+                            src={srcPath}
+                            alt={`Client Avatar ${index + 1}`}
+                            className="h-full w-full object-cover"
+                            />
+                        </div>
+                        ))}
+                    </div>
+                    </div>
 
                 <div className="text-left">
                   <div
