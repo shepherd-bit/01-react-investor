@@ -7,7 +7,10 @@ import { FiArrowRight, FiBriefcase, FiAward, FiCheckCircle, FiGlobe } from 'reac
 gsap.registerPlugin(ScrollTrigger);
 
 // Array of 10 partner logo placeholders
-const partnerLogos = Array.from({ length: 10 }, (_, i) => i + 1);
+const partnerLogos = Array.from(
+  { length: 10 },
+  (_, i) => `/Partners/partner${i === 0 ? '' : i + 1}.png`
+);
 
 export default function AboutFounder() {
   const containerRef = useRef(null);
@@ -191,21 +194,20 @@ export default function AboutFounder() {
 
                 {/* Embedded Logo Image Carousel Container */}
                 <div className="my-4 overflow-hidden rounded-xl bg-slate-50 border border-slate-200/60 p-2">
-                  <div className="flex gap-3 animate-marquee whitespace-nowrap">
-                    {partnerLogos.concat(partnerLogos).map((id, idx) => (
-                      <div
+                <div className="flex gap-3 animate-marquee whitespace-nowrap">
+                    {partnerLogos.concat(partnerLogos).map((logoPath, idx) => (
+                    <div
                         key={idx}
                         className="h-8 w-16 bg-white border border-slate-200 rounded-md overflow-hidden flex-shrink-0 flex items-center justify-center p-1"
-                      >
-                        {/* Empty Partner Logo Container Placeholder */}
+                    >
                         <img
-                          src=""
-                          alt={`Partner Logo ${id}`}
-                          className="h-full w-full object-contain"
+                        src={logoPath}
+                        alt={`Partner Logo ${(idx % 10) + 1}`}
+                        className="h-full w-full object-contain"
                         />
-                      </div>
+                    </div>
                     ))}
-                  </div>
+                </div>
                 </div>
 
                 <p className="text-xs text-slate-500 leading-relaxed mb-3">
