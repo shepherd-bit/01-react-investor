@@ -1,6 +1,6 @@
 # CapitalCore — Institutional Investor Landing Page
 
-![CapitalCore Preview](./preview.PNG)
+![CapitalCore Preview](./public/preview.PNG)
 
 🌐 **Live Demo:** [https://shepherd-bit.github.io/01-react-investor/](https://shepherd-bit.github.io/01-react-investor/)
 
