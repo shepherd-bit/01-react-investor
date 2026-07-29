@@ -18,7 +18,7 @@ export default function Hero() {
   // Array for the 15 trusted client avatars
   const trustedAvatars = Array.from(
   { length: 15 },
-  (_, i) => `/client-avatars/avatar${i + 1}.jpg`
+  (_, i) => `./client-avatars/avatar${i + 1}.jpg`
 );
 
   useGSAP(
@@ -241,7 +241,7 @@ export default function Hero() {
             >
               {/* Empty Hero Image Container Placeholder */}
               <img
-                src="/hero-3.jpg"
+                src="./hero-3.jpg"
                 alt="Financial Advisor Hero Cutout"
                 className="h-full w-full object-cover object-center"
               />
