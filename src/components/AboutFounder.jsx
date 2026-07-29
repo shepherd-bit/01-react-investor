@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 // Array of 10 partner logo placeholders
 const partnerLogos = Array.from(
   { length: 10 },
-  (_, i) => `/Partners/partner${i === 0 ? '' : i + 1}.png`
+  (_, i) => `./Partners/partner${i === 0 ? '' : i + 1}.png`
 );
 
 export default function AboutFounder() {
@@ -142,7 +142,7 @@ export default function AboutFounder() {
               {/* Founder Image Container Placeholder */}
               <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 border border-slate-200 mb-6 relative">
                 <img
-                  src="/founder.jpg"
+                  src="./founder.jpg"
                   alt="Jonathan Blackwell - Founder"
                   className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />

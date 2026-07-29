@@ -97,7 +97,7 @@ export default function Consultation() {
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img
           ref={bgImageRef}
-          src="/consultation-background.jpg"
+          src="./consultation-background.jpg"
           alt="Financial Strategy Consultation"
           className="w-full h-[120%] object-cover object-center brightness-[0.75]"
         />
