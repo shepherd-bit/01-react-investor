@@ -16,31 +16,31 @@ gsap.registerPlugin(ScrollTrigger);
 
 // 6 Featured Media & Keynote Platforms
 const pressLogos = [
-  { name: 'TEDx', logo: '/featured-logos/ted-x-logo.png' },
-  { name: 'Forbes', logo: '/featured-logos/forbes_logo.png' },
-  { name: 'Bloomberg', logo: '/featured-logos/Bloomberg_Logo.png' },
-  { name: 'Financial Times', logo: '/featured-logos/financial_times_.svg' },
-  { name: 'TechCrunch', logo: '/featured-logos/techcrunch--logo.webp' },
-  { name: 'Wall Street Journal', logo: '/featured-logos/Wall-Street-Journal.png' },
+  { name: 'TEDx', logo: './featured-logos/ted-x-logo.png' },
+  { name: 'Forbes', logo: './featured-logos/forbes_logo.png' },
+  { name: 'Bloomberg', logo: './featured-logos/Bloomberg_Logo.png' },
+  { name: 'Financial Times', logo: './featured-logos/financial_times_.svg' },
+  { name: 'TechCrunch', logo: './featured-logos/techcrunch--logo.webp' },
+  { name: 'Wall Street Journal', logo: './featured-logos/Wall-Street-Journal.png' },
 ];
 
 const mediaHighlights = [
   {
     id: 'tedx-talk',
     outlet: 'TEDx Stage',
-    logo: '/tedx-thumbnail.jpg',
+    logo: './featured-logos/tedx-thumbnail.jpg',
     type: 'Keynote Speech',
     title: 'The Next Decade of Venture Capital & Generative Economy',
     quote: 'Democratizing access to high-growth private equity requires a fundamental shift in risk modeling and transparency.',
     date: 'March 2026',
     duration: '18 min watch',
-    thumbnail: '/tedx-thumbnail.jpg',
+    thumbnail: './tedx-thumbnail.jpg',
     embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' // Replace with your video URL
   },
   {
     id: 'forbes-feature',
     outlet: 'Forbes',
-    logo: '/logos/press-forbes.svg',
+    logo: './featured-logos/press-forbes.svg',
     type: 'Cover Feature',
     title: 'How CapitalCore Is Redefining Institutional Asset Allocation',
     quote: 'A rare example of a venture firm blending algorithmic risk hedging with high-conviction megatrend investments.',
@@ -50,7 +50,7 @@ const mediaHighlights = [
   {
     id: 'bloomberg-summit',
     outlet: 'Bloomberg Markets',
-    logo: '/logos/press-bloomberg.svg',
+    logo: './featured-logos/press-bloomberg.svg',
     type: 'Panel Keynote',
     title: 'Navigating Tech Liquidity & Secondary Market Trends',
     quote: 'Structured secondary liquidity options are becoming essential for maintaining stability in late-stage valuations.',
