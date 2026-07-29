@@ -2,9 +2,9 @@
 
 ![CapitalCore Preview](./public/preview.PNG)
 
-🌐 **Live Demo:** [https://shepherd-bit.github.io/01-react-investor/](https://shepherd-bit.github.io/01-react-investor/)
-
 > An interactive, modern, high-converting investor landing page designed for institutional asset managers, venture capital firms, and high-net-worth advisory services. Built with React, GSAP, Tailwind CSS, and Lucide/React Icons.
+
+🔗 [View Live Demo](https://shepherd-bit.github.io/01-react-investor/)
 
 ---
 
