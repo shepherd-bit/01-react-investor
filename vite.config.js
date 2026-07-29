@@ -4,5 +4,5 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/01-react-investor-landing-page/',
+  base: '/01-react-investor/',
 })
